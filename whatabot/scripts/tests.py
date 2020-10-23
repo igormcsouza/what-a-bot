@@ -5,4 +5,4 @@ def run_tests():
 
 def open_web_coverage():
     os.system('coverage html')
-    os.system(f"chrome {os.path.join('htmlcov', 'index.html')}")
+    os.system(f"start {os.path.join('htmlcov', 'index.html')}")
