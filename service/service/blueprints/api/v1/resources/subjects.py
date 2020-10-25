@@ -4,7 +4,7 @@ from whatabot.search import wikipedia
 from whatabot.ia.text import summarize
 
 
-class SubjectResource(Resource):
+class SubjectAndSummaryResource(Resource):
 
     attr = reqparse.RequestParser()
     attr.add_argument(
