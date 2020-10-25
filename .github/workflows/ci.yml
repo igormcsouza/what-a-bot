@@ -29,6 +29,6 @@ jobs:
           docker run test/whatabot poetry run test
 
       - name: Test Service
-          run: |
-            cd service && docker build . -t test/service
-            docker run test/service poetry run test
+        run: |
+          cd service && docker build . -t test/service
+          docker run test/service poetry run test
