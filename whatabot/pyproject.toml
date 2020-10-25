@@ -11,6 +11,8 @@ web-cov = "scripts.tests:open_web_coverage"
 [tool.poetry.dependencies]
 python = "^3.8"
 wikipedia-api = "^0.5.4"
+gensim = "^3.8.3"
+gensim-sum-ext = "^0.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
