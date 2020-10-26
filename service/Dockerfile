@@ -6,6 +6,7 @@ RUN poetry config virtualenvs.create false
 
 WORKDIR /app
 COPY *.lock *.toml /app/
+COPY libs/* /app/libs/
 RUN poetry install
 
 COPY . /app
