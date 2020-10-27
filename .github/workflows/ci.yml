@@ -27,3 +27,8 @@ jobs:
         run: |
           cd whatabot && docker build . -t test/whatabot
           docker run test/whatabot poetry run test
+
+      - name: Test Chat-Bot
+        run: |
+          cd chat-bot && docker build . -t test/chat-bot
+          docker run test/chat-bot poetry run test
