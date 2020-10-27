@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    service:
+        build: 
+            context: ./service
+            dockerfile: Dockerfile
+        command: flask run
+        env_file: 
+            - ./service/.env
+        volumes:
+            - ./service/:/app/
+        ports: 
+            - 5000:5000
