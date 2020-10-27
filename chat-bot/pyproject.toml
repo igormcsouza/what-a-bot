@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "chat-bot"
+version = "0.1.0"
+description = ""
+authors = ["Igor Souza <igormcsouza@gmail.com>"]
+
+[tool.poetry.scripts]
+test = "scripts.tests:run_tests"
+web-cov = "scripts.tests:open_web_coverage"
+bot = "scripts.run:__main__"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.10.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
