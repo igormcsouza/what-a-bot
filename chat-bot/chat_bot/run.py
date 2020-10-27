@@ -2,7 +2,7 @@ from .bot import WhatABotChatBot
 
 
 update_id = None
-bot = WhatABotChatBot.build('1210283700:AAFmdd6DANUtFTnK9cuiTvF25RZ5VYzpHUA')
+bot = WhatABotChatBot.build('')
 
 def make_reply(message):
     return message
